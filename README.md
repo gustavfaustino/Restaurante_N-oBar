@@ -1,6 +1,3 @@
-Claro, aqui está o README atualizado:
-
----
 
 # **No'Bar - Restaurante**
 
