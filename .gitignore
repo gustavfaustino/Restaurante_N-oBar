@@ -128,3 +128,19 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Diretórios de build
+/target/
+/build/
+
+# IDEs e configurações específicas de ambiente
+.idea/
+.vscode/
+
+# Arquivos de configuração
+application.properties
+application-prod.properties
+
+# Node.js
+/node_modules/
+
