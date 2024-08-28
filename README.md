@@ -1,7 +1,7 @@
 
-<h1 align="center" > <b> No'Bar Restaurante </b> </h1>
+<h1 align="center" > <b> N'o Bar Restaurante </b> </h1>
 
-O **No'Bar** é um restaurante que combina um ambiente minimalista e sofisticado com um cardápio cuidadosamente elaborado. Oferecemos uma experiência gastronômica única, com um design em tons de preto e cinza e um atendimento dedicado. Nosso objetivo é proporcionar momentos de sabor e conforto, atendendo às necessidades modernas de nossos clientes.
+O **N'o Bar** é um restaurante que combina um ambiente minimalista e sofisticado com um cardápio cuidadosamente elaborado. Oferecemos uma experiência gastronômica única, com um design em tons de preto e cinza e um atendimento dedicado. Nosso objetivo é proporcionar momentos de sabor e conforto, atendendo às necessidades modernas de nossos clientes.
 
 ![Mockup do Projeto](frontend/imagens/Thumbnailthumbnail.png)
 
