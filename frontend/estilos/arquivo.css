@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+   background-image: url(../imagens/tela1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+    color: white;
+}
+
+.opcoes {
+    display: flex;
+    gap: 20px; 
+}
+
+.opcoes h2 {
+    margin: 0;
+}
+
+.opcoes a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
