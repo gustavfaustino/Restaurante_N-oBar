@@ -102,7 +102,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -144,3 +143,84 @@ application-prod.properties
 # Node.js
 /node_modules/
 
+# Diretórios e arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Compilação e Build
+/out/
+
+# Diretórios do Maven
+/.mvn/
+
+# Dependências do Maven
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Arquivos e pastas gerados pelo IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+
+# Arquivos e pastas gerados pelo Eclipse
+.project
+.classpath
+.settings/
+
+# Arquivos de configuração locais
+*.properties
+*.yml
+*.env
+
+# Arquivos de configuração específicos de Spring Boot
+application*.yml
+application*.properties
+
+# Arquivos de configuração de segurança
+.secret
+*.keystore
+*.jks
+
+# Arquivos gerados pelo sistema de cache do Spring Boot
+.springBeans
+
+# Logs de banco de dados
+*.db
+*.sql
+*.sqlite
+
+# Testes e Cobertura de Testes
+/test-output/
+/.coverage/
+/jacoco.exec
+/*.exec
+/coverage-reports/
+
+# Arquivos de build gerados
+*.class
+*.jar
+*.war
+*.ear
+
+# Arquivos de backup temporários
+*~
+*.bak
+*.swp
+
+# Diretórios e arquivos gerados pelo Node.js
+/npm-debug.log
+
+# Outros
+/.sass-cache/
+/.bower/
+/.tmp/
+*.tmp
+*~.nib
+._*
+
+# Arquivos locais do IDE
+.gradle/
