@@ -1,32 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
 body{
-   background-image: url(../imagens/tela1.jpg);
+   background-image: url(tela1.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 
 .topo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin: auto;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 40px 50px; 
+    font-family: 'Libre Caslon text', serif;
     color: white;
+    width: 100%; 
+    
 }
 
 .opcoes {
+    font-size: 25px;
     display: flex;
     gap: 20px; 
-}
-
-.opcoes h2 {
-    margin: 0;
+    margin-left: 70%; 
 }
 
 .opcoes a {
-    text-decoration: none;
-    color: inherit; 
+    text-decoration: none; 
+    color: white; 
+    border-radius: 20px; 
 }
 
+.opcoes a:visited,
+.opcoes a:hover,
+.opcoes a:active {
+    text-decoration: none; 
+    color: white; 
+}
 
+.opcoes a:hover {
+    color: black; 
+    background-color: white; 
+    border: 2px solid white; 
+}
+
+.titulo{
+    color: white;
+    font-family: 'Libre Caslon text', serif;
+    font-size: 100px;
+    
+}
