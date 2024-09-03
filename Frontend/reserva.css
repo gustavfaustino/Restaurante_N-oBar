@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+body {
+    color: #0a0a0a;
+    background-color: #1b1a1a; /* Cor de fundo para a página */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 15px;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+/* Estilo para o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Texto em negrito */
+    padding: 5px 10px; /* Espaçamento interno */
+    display: block; /* Faz com que o link ocupe toda a área do item de lista */
+    border-radius: 50px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover */
+nav ul li a:hover {
+    background-color: white; /* Cor de fundo branca no hover */
+    color: black; /* Cor do texto preta no hover */
+}
+.background-home {
+    background-image: url(img/imgreserva.jpg) ; /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); /* Ajusta a altura para considerar a altura da barra de menu */
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    color: white;
+    position: relative;
+    padding: 10px;
+    overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do contêiner */
+    margin-top: 80px; /* Espaçamento para a altura da barra de menu */
+}
+
+.background-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: 1; /* Coloca a camada acima da imagem, mas abaixo do conteúdo */
+}
+
+.background-home h2,
+.background-home p {
+    position: relative; /* Garante que esses elementos fiquem acima da camada escura */
+    z-index: 2; /* Garante que o texto fique acima da camada escura */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento entre o título e o parágrafo */
+}
+
+.background-home h2 {
+    font-size: 40px; /* Ajuste o tamanho do título */
+}
+
+.background-home p {
+    font-size: 15px; /* Ajuste o tamanho do parágrafo */
+    margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
+}
+
+.background-home form {
+    position: relative; /* Garante que o formulário fique acima da camada escura */
+    z-index: 2; /* Garante que o formulário fique acima da camada escura */
+    display: flex;
+    flex-direction: column; /* Alinha os campos um embaixo do outro */
+    align-items: flex-start; /* Alinha os campos à esquerda */
+    width: 100%;
+    max-width: 400px; /* Reduz a largura máxima do formulário */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para o formulário */
+    border-radius: 10px;
+    margin-left: 20px; /* Espaçamento à esquerda do formulário */
+}
+
+.background-home label {
+    font-size: 14px; /* Tamanho da fonte para os rótulos */
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.background-home input,
+.background-home select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.background-home button.reserve-button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.background-home button.reserve-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .background-home {
+        padding: 10px;
+        height: calc(100vh - 60px); /* Ajusta a altura para dispositivos menores */
+    }
+
+    .background-home h2 {
+        font-size: 100px; 
+        /* Ajuste para dispositivos menores */
+    }
+
+    .background-home p {
+        font-size: 12px; /* Ajuste para dispositivos menores */
+    }
+
+    .background-home form {
+        max-width: 200%; /* Ajusta a largura máxima para dispositivos menores */
+        padding: 15px;
+        font-size: 12px; /* Ajuste para dispositivos menores */
+    }
+
+    .background-home input,
+    .background-home select {
+        margin-bottom: 10px;
+    }
+
+    .background-home button.reserve-button {
+        padding: 8px 16px;
+    }
+}

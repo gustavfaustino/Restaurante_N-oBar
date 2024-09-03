@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Libre caslon text, sans-serif;
+}
+
+
+body {
+    background-color: #1b1a1a;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    margin-left: 15px;
+    font-size: 15px;
+    padding-left: 40px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Aumentando o espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Define o texto como negrito */
+    padding: 5px 10px; /* Adiciona espaçamento interno e ajusta o tamanho */
+    display: block; /* Faz com que o link ocupe toda a área do item de lista */
+    border-radius: 50px; /* Bordas arredondadas para criar um formato redondo */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Efeito hover */
+nav ul li a:hover {
+    background-color: white; /* Cor de fundo branca no hover */
+    color: black; /* Cor do texto preta no hover para contraste */
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: flex-start; /* Alinha os itens ao lado esquerdo */
+    height: 100vh; /* Ajusta a altura para ocupar toda a tela */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo para o conteúdo de boas-vindas */
+
+/* Estilo para o conteúdo de boas-vindas */
+/* Estilo para o contêiner que centraliza o conteúdo */
+.welcome-text {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente em coluna */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    justify-content: center; /* Centraliza verticalmente os itens */
+    height: 100vh; /* Ocupa a altura total da viewport *//* Centraliza o texto dentro dos títulos */
+    color: white; /* Define a cor do texto como branca */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilo para o texto h1 */
+.welcome-text h1 {
+    position: relative;
+    top: 100px;
+    padding-left: 250px;
+    font-size: 80px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0px; 
+    text-align:left;/* Remove margens padrão */
+}
+
+/* Estilo para o texto h3 */
+.welcome-text h3 {
+    text-align: justify;
+    padding-top: 20%;
+    padding-left: 250px;
+    font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0px; /* Ajusta a margem acima e abaixo do h3 */
+}
+
+.reserve-button {
+    margin-left: 30%;
+    margin-top: 45px; /* Espaço acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    color: black; /* Cor do texto do botão */
+    background-color: white; /* Cor de fundo do botão */
+    border: 2px ; /* Borda preta para contraste */
+    border-radius: 50px; /* Bordas arredondadas para o botão */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para efeitos de hover */
+}
+
+.reserve-button:hover {
+    background-color: black; /* Muda o fundo para preto no hover */
+    color: white; /* Muda o texto para branco no hover */
+}
+
+.reserve-button{
+    text-decoration: none; /* Tira o sublinhado embaixo do texto que a ancora coloca */ 
+}
+
+/* Estilo para as imagens */
+/* Estilo para as imagens */
+/* Estilo para as imagens */
+/* Estilo para as imagens */
+.welcome-images {
+    display: flex;
+    position: relative; /* Necessário para o posicionamento absoluto das imagens */
+}
+
+.welcome-images img {
+    max-width: 250px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    border: 3px ;/* Adiciona uma borda branca */
+    position:absolute; /* Permite a sobreposição das imagens */
+}
+
+/* Ajusta o posicionamento das imagens */
+/* Estilo para as imagens */
+.welcome-images {
+    display: flex;
+    position: relative; /* Necessário para o posicionamento absoluto das imagens */
+}
+
+.welcome-images img {
+    max-width: 250px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    border: 3px ; /* Adiciona uma borda branca */
+    position: absolute; /* Permite a sobreposição das imagens */
+}
+
+/* Ajusta o posicionamento das imagens */
+.welcome-images img:nth-child(2) {
+    top: -50px; /* Move a primeira imagem 20 pixels para cima */
+    right: -650px; /* Ajusta a posição da primeira imagem para a direita */
+}
+
+.welcome-images img:nth-child(1) {
+    top: 30%; /* Ajusta a posição da segunda imagem para cima em relação à altura da primeira */
+    right: -550px; /* Ajusta a posição da segunda imagem para a direita */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para que a segunda imagem se sobreponha na metade da primeira */
+}
+

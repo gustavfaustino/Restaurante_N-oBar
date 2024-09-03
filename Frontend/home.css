@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+body {
+    color: #333;
+    background-color: #1b1a1a; /* Cor de fundo para a página */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+    .logo {
+        margin-left: 15px;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+
+/* Estilo para o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Texto em negrito */
+    padding: 5px 10px; /* Espaçamento interno */
+    display: block; /* Faz com que o link ocupe toda a área do item de lista */
+    border-radius: 50px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover */
+nav ul li a:hover {
+    background-color: white; /* Cor de fundo branca no hover */
+    color: black; /* Cor do texto preta no hover */
+}
+
+/* Seção de fundo */
+.background-home {
+    background-image: url('img/rest1.jpg'); /* Substitua pela sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinhando os elementos à esquerda */
+    color: white;
+    position: relative;
+    padding-left: 20px; /* Espaço à esquerda */
+}
+
+.background-home::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* Estilo para h1 */
+.background-home h1 {
+    font-size: 80px; /* Tamanho do h1 */
+    text-align: left; /* Alinhamento à esquerda */
+    width: 100%;
+    margin-bottom: 0; /* Remove o espaço abaixo do h1 */
+}
+
+/* Estilo para h2 */
+.background-home h2 {
+    font-size: 30px; /* Tamanho do h2 */
+    text-align: center; /* Centraliza o h2 */
+    margin-top: -15px; /* Ajusta a posição em relação ao h1 */
+}
+
+/* Estilo para a seção do cardápio */
+/* Seção de fundo do cardápio */
+/* Seção de fundo do cardápio */
+
+.background-home{
+    padding: 55px;
+}
+
+
+/* Botão de reserva */
+.reserve-button {
+    margin-left: 30%;
+    margin-top: 45px; /* Espaço acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    color: black; /* Cor do texto do botão */
+    background-color: white; /* Cor de fundo do botão */
+    border: 2px solid black; /* Borda preta para contraste */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para efeitos de hover */
+}
+
+.reserve-button:hover {
+    background-color: black; /* Muda o fundo para preto no hover */
+    color: white; /* Muda o texto para branco no hover */
+}
+
+.menu-section {
+    background-image: url(img/louis-hansel-phEaeqe555M-unsplash2.jpg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
