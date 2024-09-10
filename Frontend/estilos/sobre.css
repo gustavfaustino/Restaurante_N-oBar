@@ -155,14 +155,14 @@ nav ul li a:hover {
 }
 
 /* Ajusta o posicionamento das imagens */
-.welcome-images img:nth-child(2) {
+.welcome-images img:nth-child(1) {
     top: -50px; /* Move a primeira imagem 20 pixels para cima */
     right: -650px; /* Ajusta a posição da primeira imagem para a direita */
 }
 
-.welcome-images img:nth-child(1) {
+.welcome-images img:nth-child(2) {
     top: 30%; /* Ajusta a posição da segunda imagem para cima em relação à altura da primeira */
-    right: -550px; /* Ajusta a posição da segunda imagem para a direita */
+    right: -600px; /* Ajusta a posição da segunda imagem para a direita */
     transform: translate(-50%, -50%); /* Ajusta o posicionamento para que a segunda imagem se sobreponha na metade da primeira */
 }
 

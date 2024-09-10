@@ -126,7 +126,7 @@ nav ul li a:hover {
 }
 
 .menu-section {
-    background-image: url(../img/louis-hansel-phEaeqe555M-unsplash2.jpg); /* Substitua pelo caminho da sua imagem */
+    background-image: url(img/louis-hansel-phEaeqe555M-unsplash2.jpg); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
     padding: 50px 20px;
