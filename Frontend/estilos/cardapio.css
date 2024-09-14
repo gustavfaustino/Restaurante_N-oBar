@@ -1,0 +1,117 @@
+/* Importar fonte */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Caslon Text', serif;
+    background: linear-gradient(135deg, #333333 25%, #666666 50%, #333333 75%);
+    background-image: url(../imagens/composicao-de-comida-mexicana-plana-leigos-com-copyspace_23-2148140208\ 1.jpg);
+    background-size: cover;
+    
+}
+
+header {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+  
+  .logo {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  /* Estilo para o menu de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px; /* Espaçamento entre os itens do menu */
+  }
+  
+  nav ul li a {
+    color: white; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold; /* Texto em negrito */
+    padding: 5px 10px; /* Espaçamento interno */
+    display: block; /* Faz com que o link ocupe toda a área do item de lista */
+    border-radius: 50px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+  }
+  
+  /* Efeito hover */
+  nav ul li a:hover {
+    background-color: white; /* Cor de fundo branca no hover */
+    color: black; /* Cor do texto preta no hover */
+  }
+  
+.menu-section {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada preta transparente sobre a imagem */
+    padding-top: 80px; /* Ajuste para compensar o header fixo */
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.menu-content {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 60px; /* Espaçamento entre as seções */
+   
+    
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-top: 55px;
+}
+
+.item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 11px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}

@@ -10,6 +10,9 @@
 body {
     color: #0a0a0a;
     background-color: #1b1a1a; /* Cor de fundo para a página */
+    margin: 0;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da página */
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 /* Header styles */
@@ -58,19 +61,19 @@ nav ul li a:hover {
     background-color: white; /* Cor de fundo branca no hover */
     color: black; /* Cor do texto preta no hover */
 }
+
 .background-home {
-    background-image: url(../imagens/imgreserva.jpg) ; /* Caminho da imagem */
+    background-image: url(../imagens/imgreserva.jpg); /* Caminho da imagem */
     background-size: cover;
     background-position: center;
-     /* Ajusta a altura para considerar a altura da barra de menu */
+    padding: 100px 10px 10px; /* Ajusta o padding para evitar sobreposição do cabeçalho fixo */
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
     color: white;
     position: relative;
-    padding: 10px;
-    overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites do contêiner */
+    min-height: calc(100vh - 80px); /* Garante que o contêiner tenha altura mínima para o cabeçalho fixo */
     margin-top: 80px; /* Espaçamento para a altura da barra de menu */
 }
 
@@ -113,7 +116,9 @@ nav ul li a:hover {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para o formulário */
     border-radius: 10px;
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura disponível */
     margin-left: 20px; /* Espaçamento à esquerda do formulário */
+    min-height: 300px; /* Altura mínima para garantir que o formulário seja visível */
 }
 
 .background-home label {
@@ -143,6 +148,7 @@ nav ul li a:hover {
     border-radius: 5px;
     border: none;
     transition: background-color 0.3s, color 0.3s;
+    align-self: center; /* Centraliza o botão horizontalmente dentro do formulário */
 }
 
 .background-home button.reserve-button:hover {
@@ -152,13 +158,12 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .background-home {
-        padding: 10px;
-        height: calc(100vh - 60px); /* Ajusta a altura para dispositivos menores */
+        padding: 100px 10px 10px; /* Ajusta o padding para evitar sobreposição do cabeçalho fixo em dispositivos menores */
+        min-height: calc(100vh - 60px); /* Ajusta a altura mínima para dispositivos menores */
     }
 
     .background-home h2 {
-        font-size: 100px; 
-        /* Ajuste para dispositivos menores */
+        font-size: 30px; /* Ajuste para dispositivos menores */
     }
 
     .background-home p {
@@ -166,7 +171,7 @@ nav ul li a:hover {
     }
 
     .background-home form {
-        max-width: 200%; /* Ajusta a largura máxima para dispositivos menores */
+        max-width: 100%; /* Ajusta a largura máxima para dispositivos menores */
         padding: 15px;
         font-size: 12px; /* Ajuste para dispositivos menores */
     }
