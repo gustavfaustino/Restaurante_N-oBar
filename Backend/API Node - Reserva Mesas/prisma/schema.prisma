@@ -14,11 +14,12 @@ datasource db {
 }
 
 model Reserva {
-  id          String @id @default(auto()) @map("_id") @db.ObjectId
-  name        String @db.String
-  telefone    String @db.String
-  data        String @db.String
-  horario     String @db.String
-  email       String @unique @db.String
-  qtd_pessoas Int    @db.Int
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  nomeCliente     String   @db.String
+  telefoneCliente String   @db.String
+  dataReserva     DateTime
+  horarioReserva  String   @db.String
+  email           String   @unique @db.String
+  numeroPessoas   Int      @db.Int
+  status          String   @default("pendente")
 }

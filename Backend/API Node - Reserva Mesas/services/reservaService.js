@@ -10,8 +10,8 @@ const criarReserva = async (dadosReserva) => {
             data: dadosReserva,
         });
         return reserva;
-    } catch (erro) {
-        throw erro;
+    } catch (error) {
+        throw error;
     }
 };
 
@@ -31,9 +31,19 @@ const verficaDisponibilidade = async (data, horario) => {
     }
 }
 
-// TODO: Implementar as rotas de reserva e disponibilidade
+const listarReservas = async () => {
+    try {
+        const reservas = await prisma.user.findMany(); // Adaptado para o Prisma
+        return reservas;
+    } catch (error) {
+        throw error;
+    }
+}
+
+
 
 export default {
     criarReserva,
-    verficaDisponibilidade
+    verficaDisponibilidade,
+    listarReservas
 }

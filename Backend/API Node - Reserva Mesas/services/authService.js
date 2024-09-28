@@ -34,7 +34,7 @@ const autenticarUsuario = async (email, senha) => {
             throw new Error('Senha incorreta');
         }
 
-        const token = jwt.sign({ id: usuario.id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ id: usuario.id }, process.env.JWT_SECRET, {expiresIn: '1h'});
         return token;
     } catch (error) {
         throw error;
