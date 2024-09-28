@@ -166,3 +166,46 @@ nav ul li a:hover {
     transform: translate(-50%, -50%); /* Ajusta o posicionamento para que a segunda imagem se sobreponha na metade da primeira */
 }
 
+/* ... outros estilos ... */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca o logotipo e o menu em colunas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Permite que os itens do menu quebrem em várias linhas */
+        justify-content: center; /* Centraliza os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px; /* Ajusta a margem dos itens do menu */
+    }
+
+    .welcome-section {
+        flex-direction: column; /* Coloca o texto e as imagens em colunas */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .welcome-text {
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    .welcome-text h1 {
+        font-size: 4em; /* Ajusta o tamanho do título */
+        padding-left: 0; /* Remove o padding esquerdo */
+    }
+
+    .welcome-text h3 {
+        font-size: 1.2em; /* Ajusta o tamanho do texto */
+        padding-left: 0; /* Remove o padding esquerdo */
+    }
+
+    .welcome-images img {
+        max-width: 100%; /* As imagens ocupam 100% da largura do contêiner */
+        position: static; /* Remove o posicionamento absoluto */
+        margin: 20px auto; /* Centraliza as imagens e adiciona margem */
+    }
+}

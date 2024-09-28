@@ -9,16 +9,16 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id           Int      @id @default(autoincrement()) @map("_id")
-  name         String   @db.VarChar(70)
-  telefone     String   @unique @db.VarChar(11) // Se você estiver armazenando como número
-  data         String   @unique @db.VarChar(10)
-  horario      String   @db.VarChar(5)
-  email        String   @unique @db.VarChar(60)
-  qtd_pessoas  Int
+model Reserva {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  name        String @db.String
+  telefone    String @db.String
+  data        String @db.String
+  horario     String @db.String
+  email       String @unique @db.String
+  qtd_pessoas Int    @db.Int
 }
