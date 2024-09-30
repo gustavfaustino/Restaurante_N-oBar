@@ -13,13 +13,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  nome     String    @db.String
+  email    String    @unique @db.String
+  senha    String    @db.String
+  reservas Reserva[]
+}
+
 model Reserva {
   id              String   @id @default(auto()) @map("_id") @db.ObjectId
   nomeCliente     String   @db.String
   telefoneCliente String   @db.String
-  dataReserva     DateTime
+  dataReserva     DateTime @db.Date
   horarioReserva  String   @db.String
   email           String   @unique @db.String
   numeroPessoas   Int      @db.Int
   status          String   @default("pendente")
+  userID          String   @db.String // FK
+  user            User     @relation(fields: [userID], references: [id]) // 1:N relation
 }

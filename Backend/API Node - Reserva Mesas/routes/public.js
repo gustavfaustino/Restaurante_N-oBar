@@ -1,3 +1,4 @@
+// routes/public.js
 import express from "express";
 import reservaControllers from "../controllers/reservaControllers.js";
 import authController from "../controllers/authController.js";

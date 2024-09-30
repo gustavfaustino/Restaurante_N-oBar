@@ -1,3 +1,4 @@
+// controllers/authController.js
 import authService from "../services/authService.js";
 
 const registrarUsuario = async (req, res) => {

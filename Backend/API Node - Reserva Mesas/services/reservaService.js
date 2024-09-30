@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 const criarReserva = async (dadosReserva) => {
     try{
-        const reserva = await prisma.user.create({ // Adaptado para o Prisma
+        const reserva = await prisma.reserva.create({ // Adaptado para o Prisma
             data: dadosReserva,
         });
         return reserva;
@@ -17,12 +17,10 @@ const criarReserva = async (dadosReserva) => {
 
 const verficaDisponibilidade = async (data, horario) => {
     try{
-        const disponibilidade = await prisma.user.findUnique({ // Adaptado para o Prisma
+        const disponibilidade = await prisma.reserva.findUnique({ // Adaptado para o Prisma
             where: {
-                AND: [
-                    {data},
-                    {horario}
-                ]
+                dataReserva: data,
+                horarioReserva: horario
             }
         });
         return !disponibilidade;
@@ -33,7 +31,7 @@ const verficaDisponibilidade = async (data, horario) => {
 
 const listarReservas = async () => {
     try {
-        const reservas = await prisma.user.findMany(); // Adaptado para o Prisma
+        const reservas = await prisma.reserva.findMany(); // Adaptado para o Prisma
         return reservas;
     } catch (error) {
         throw error;

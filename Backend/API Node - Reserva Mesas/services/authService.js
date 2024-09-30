@@ -11,14 +11,21 @@ const registrarUsuario = async (dadosUsuario) => {
         const salt = await bcrypt.genSalt(10);
         dadosUsuario.senha = await bcrypt.hash(dadosUsuario.senha, salt);
 
+        // Inserir usuário sem transação
         const usuario = await prisma.user.create({
-            data: dadosUsuario,
+            data: {
+                nome: dadosUsuario.nome,
+                email: dadosUsuario.email,
+                senha: dadosUsuario.senha
+            }
         });
+
         return usuario;
     } catch (error) {
         throw error;
     }
 };
+
 
 const autenticarUsuario = async (email, senha) => {
     try {
