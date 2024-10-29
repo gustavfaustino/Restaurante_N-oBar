@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get('/', (req, res) => {
-    res.send('Bem-vindo ao NoBar API! Acesse a documentação em <a href="/api/docs">/api/docs</a>'); // Adiciona um link para a documentação
+    res.send('Bem-vindo ao NoBar API! Acesse a documentação em <a href="/api/docs">/api/docs</a>'); // Corrigido para /api/docs
 });
 
 // Rotas de autenticação
