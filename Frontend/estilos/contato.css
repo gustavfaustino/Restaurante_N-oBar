@@ -21,7 +21,7 @@ header {
     font-size: 18px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px; /* Reduzido para dar mais espaço */
+    padding: 25px 20px; /* Reduzido para dar mais espaço */
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     position: fixed;
@@ -33,7 +33,6 @@ header {
 .logo {
     margin-left: 15px;
     font-size: 15px;
-    padding-left: 40px;
 }
 
 nav ul {

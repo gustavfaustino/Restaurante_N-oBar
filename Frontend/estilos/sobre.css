@@ -31,7 +31,6 @@ header {
 .logo {
     margin-left: 15px;
     font-size: 15px;
-    padding-left: 40px;
 }
 nav ul {
     list-style: none;
@@ -156,20 +155,20 @@ nav ul li a:hover {
 
 /* Ajusta o posicionamento das imagens */
 .welcome-images img:nth-child(1) {
-    top: -50px; /* Move a primeira imagem 20 pixels para cima */
-    right: -650px; /* Ajusta a posição da primeira imagem para a direita */
+    top: -80px; /* Move a primeira imagem 20 pixels para cima */
+    right: -500px; /* Ajusta a posição da primeira imagem para a direita */
 }
 
 .welcome-images img:nth-child(2) {
-    top: 30%; /* Ajusta a posição da segunda imagem para cima em relação à altura da primeira */
-    right: -600px; /* Ajusta a posição da segunda imagem para a direita */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento para que a segunda imagem se sobreponha na metade da primeira */
+    top: 90%; /* Ajusta a posição da segunda imagem para cima em relação à altura da primeira */
+    right: -540px; /* Ajusta a posição da segunda imagem para a direita */
+    transform: translate(-80%, -60%); /* Ajusta o posicionamento para que a segunda imagem se sobreponha na metade da primeira */
 }
 
 /* ... outros estilos ... */
 
 /* Responsividade para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 250px) {
     header {
         flex-direction: column; /* Coloca o logotipo e o menu em colunas */
         align-items: flex-start; /* Alinha os itens à esquerda */
@@ -204,7 +203,7 @@ nav ul li a:hover {
     }
 
     .welcome-images img {
-        max-width: 100%; /* As imagens ocupam 100% da largura do contêiner */
+        max-width: 90%; /* As imagens ocupam 100% da largura do contêiner */
         position: static; /* Remove o posicionamento absoluto */
         margin: 20px auto; /* Centraliza as imagens e adiciona margem */
     }
